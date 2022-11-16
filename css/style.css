@@ -4,3 +4,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.header-bar {
+    background-color: orange;
+    min-height: 100px;
+}
+
+.cat-menu {
+    vertical-align: middle;
+    padding-left: 15%;
+    color: white;
+    font-size: 1.2em;
+}
+
+.login {
+    vertical-align: middle;
+    padding-right: 15%;
+    color: white;
+    font-size: 1.2em;
+}
+
+.img-logo {
+    height: 50px;
+    margin: auto;
+}
+
+ul li {
+    display:inline
+}
+
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 5% 15%;
+}
