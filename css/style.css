@@ -8,6 +8,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 .header-bar {
@@ -19,6 +20,8 @@
     width: 100%;
     z-index: 30;
 }
+
+
 
 .cat-menu {
     vertical-align: middle;
@@ -59,11 +62,6 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.container {
-    margin: 5% 15%;
-    position: relative;
 }
 
 .item-box {
