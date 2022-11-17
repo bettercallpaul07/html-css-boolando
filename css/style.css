@@ -1,13 +1,23 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header-bar {
     background-color: orange;
     min-height: 100px;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
 }
 
 .cat-menu {
@@ -24,22 +34,120 @@
     font-size: 1.2em;
 }
 
+main .container .flex-item {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 0;
+}
+
 .img-logo {
     height: 50px;
     margin: auto;
 }
 
 ul li {
-    display:inline
+    display:inline;
 }
 
+main {
+    margin-top: 70px;
+}
 
 .flex-item {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
 }
 
 .container {
     margin: 5% 15%;
+    position: relative;
+}
+
+.item-box {
+    width: calc(100% / 3 - 20px);
+    margin-bottom: 20px;
+}
+
+.photo-card {
+    width: 100%;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.photo-card img {
+    width: 100%;
+}
+
+.photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.photo-card:hover .photo {
+    display: none;
+}
+
+.heart-box {
+    position: absolute;
+    right: 0;
+    top: 2%;
+    z-index: 10;
+    background-color: white;
+    padding: 10px;
+}
+
+.discount-box {
+    position: absolute;
+    left: 0;
+    bottom: 8%;
+}
+
+.discount-box > * {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+}
+
+.text-box .item-name {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2px 0;
+}
+
+.text-box .price {
+    font-weight: bold;
+    color: red;
+}
+
+.text-box .discount-price {
+    text-decoration: line-through;
+}
+
+
+
+footer {
+    background-color: #1A1A1A;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+    padding: 10px 10px 10px 0;
 }
